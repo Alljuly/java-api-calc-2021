@@ -3,11 +3,29 @@
 O projeto irá desenvolver uma calculadora com apenas algumas operações básicas, ele será usado como avaliação da disciplina de Gestão e Qualidade de software pelo professor Daniel Fireman.
 
 ### Pré-requisitos
-TODO(Alice): deifinir lista de pré requisitos de instalação;
+```
+Não definidos.
+```
+### Funções
+```
+Soma.
+Subtração.
+```
 
 ### Instalação
-TODO(Alice): definir instalação;
+```
+Faça download do arquido da calculadora.
+Execute a insatalação.
+```
+
+### Desenvolvedores
+```
+Alice Julia.
+Daniel Fireman (Orientador).
+```
 
 ### Testando aqui
 
 Olá professor, como está?
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)    
