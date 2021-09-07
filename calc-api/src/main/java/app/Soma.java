@@ -16,7 +16,8 @@ public class Soma{
         } catch (NumberFormatException nfe) {
             new BadRequestException (String.format("Formato inválido"));
         }   
-        return "";
+    return "";
+
     }
 
 }
