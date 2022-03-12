@@ -33,7 +33,7 @@ public class Soma {
         } catch (NumberFormatException nfe) {
             throw new IllegalArgumentException(String.format("número inválido:\"%s\"", po1));
         }
-        return Math.pow(op, po);
+        return op + po;
     }
 
 }
