@@ -15,7 +15,7 @@ Subtração.
 ### Instalação
 ```
 Faça download do arquivo da calculadora.
-Execute a insatalação.
+Execute a instalação.
 ```
 
 ### Desenvolvedores
