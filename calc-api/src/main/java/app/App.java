@@ -16,6 +16,12 @@ public class App extends Jooby {
   {
     // declaração de rotas
     mvc(new Controller());
-    mvc(new Soma());
+    mvc(new Add());
+    mvc(new Subtraction());
+    mvc(new Division());
+  }
+
+  public static void main(String[] args) {
+    runApp(args, App::new);
   }
 }
