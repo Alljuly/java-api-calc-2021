@@ -3,24 +3,24 @@ package app;
 import io.jooby.annotations.*;
 import io.jooby.exception.BadRequestException;
 
-public class Soma {
+public class Add {
 
-    @Path("/soma/{op}/{po}")
+    @Path("/add/{op}/{po}")
     @GET
-    public String rotaSoma(@PathParam String op, @PathParam String po) {
+    public String routeAdd(@PathParam String op, @PathParam String po) {
 
         try {
             // converter em double
             double sum = Double.parseDouble(op) + Double.parseDouble(po);
             // retornar soma dos parametros
-            return String.format("Soma:%s", sum);
+            return String.format("Result :%s", sum);
         } catch (NumberFormatException nfe) {
             new BadRequestException(String.format("Formato inválido"));
         }
         return "";
     }
 
-    public double soma(String op1, String po1) throws IllegalArgumentException {
+    public double add(String op1, String po1) throws IllegalArgumentException {
         double op = 0;
         try {
             op = Double.parseDouble(op1);
