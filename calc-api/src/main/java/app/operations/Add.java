@@ -13,7 +13,7 @@ public class Add {
             // converter em double
             double sum = Double.parseDouble(op) + Double.parseDouble(po);
             // retornar soma dos parametros
-            return String.format("Result :%s", sum);
+            return String.format("Result: %s", sum);
         } catch (NumberFormatException nfe) {
             new BadRequestException(String.format("Formato inválido"));
         }
