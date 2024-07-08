@@ -7,23 +7,23 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 
-public class SubTest {
-    Subtraction sub;
+public class AddTest {
+    Add add;
 
     @BeforeEach
     public void setup() {
-        sub = new Subtraction();
+        add = new Add();
     }
 
     @Test
-    public void testSub_success() {
-        assertEquals(1, sub.sub("3", "2"));
+    public void testAdd_success() {
+        assertEquals(5, add.add("3", "2"));
     }
 
     @Test
-    public void testSub_entryLetter() {
+    public void testAdd_entryLetter() {
         assertThrows(IllegalArgumentException.class, () -> {
-            sub.sub("3", "a");
+            add.add("3", "a");
         });
     }
 }
