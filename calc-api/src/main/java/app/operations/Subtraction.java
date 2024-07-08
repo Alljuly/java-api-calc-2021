@@ -11,7 +11,7 @@ public class Subtraction {
             // converter em double
             double sub = Double.parseDouble(num1) - Double.parseDouble(num2);
             // retornar a subtração dos parametros
-            return String.format("Result :%s", sub);
+            return String.format("Result: %s", sub);
         } catch (NumberFormatException nfe) {
             new BadRequestException(String.format("Formato inválido"));
         }

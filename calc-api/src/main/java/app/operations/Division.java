@@ -13,7 +13,7 @@ public class Division {
             // converter em double
             double division = Double.parseDouble(num1) / Double.parseDouble(num2);
             // retornar soma dos parametros
-            return String.format("Result :%s", division);
+            return String.format("Result: %s", division);
         } catch (NumberFormatException nfe) {
             new BadRequestException(String.format("Formato invalido"));
         }

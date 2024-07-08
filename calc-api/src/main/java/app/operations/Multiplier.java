@@ -10,7 +10,7 @@ public class Multiplier {
     public String routeMult(@PathParam String num1, @PathParam String num2){
         try{
             double mult = Double.parseDouble(num1) * Double.parseDouble(num2);
-            return String.format("Result :%s", mult);
+            return String.format("Result: %s", mult);
         } catch (NumberFormatException nfe) {
             new BadRequestException(String.format("Formato inválido"));
         }
