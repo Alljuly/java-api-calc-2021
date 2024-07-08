@@ -33,7 +33,7 @@ jobs:
           ${{ runner.os }}-maven-
 
     - name: Build and Test with Maven
-      run: mvn -B clean test --file pom.xml
+      run: mvn -B clean test --file calc-api/pom.xml
 
     - name: Upload Test Results
       if: always()
