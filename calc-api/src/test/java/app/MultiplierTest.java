@@ -7,23 +7,23 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 
-public class SubTest {
-    Subtraction sub;
+public class MultiplierTest {
+    Multiplier mult;
 
     @BeforeEach
     public void setup() {
-        sub = new Subtraction();
+        mult = new Multiplier();
     }
 
     @Test
-    public void testSub_success() {
-        assertEquals(1, sub.sub("3", "2"));
+    public void testMult_success() {
+        assertEquals(6, mult.mult("3", "2"));
     }
 
     @Test
-    public void testSub_entryLetter() {
+    public void testMul_entryLetter() {
         assertThrows(IllegalArgumentException.class, () -> {
-            sub.sub("3", "a");
+            mult.mult("3", "a");
         });
     }
 }

@@ -7,23 +7,23 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 
-public class SomaTest {
-    Soma soma;
+public class DivisionTest {
+    Division div;
 
     @BeforeEach
     public void setup() {
-        soma = new Soma();
+        div = new Division();
     }
 
     @Test
-    public void testsoma_success() {
-        assertEquals(5, soma.soma("3", "2"));
+    public void testDiv_success() {
+        assertEquals(5, div.division("10", "2"));
     }
 
     @Test
-    public void testSoma_entradaLetra() {
+    public void testDiv_entryLetter() {
         assertThrows(IllegalArgumentException.class, () -> {
-            soma.soma("3", "a");
+            div.division("3", "a");
         });
     }
 }
