@@ -10,12 +10,8 @@ Não definidos.
 ```
 Soma.
 Subtração.
-```
-
-### Instalação
-```
-Faça download do arquivo da calculadora.
-Execute a instalação.
+Multiplicação.
+Divisão
 ```
 
 ### Desenvolvedores
